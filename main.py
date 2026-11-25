@@ -1,7 +1,7 @@
 from tkiteasy import *
 from pprint import pprint
 
-plan2=[]
+plan=[]
 with open("plan.txt", "r") as f:
     entete = f.readline().strip().split()
     c=int(entete[0])
@@ -10,5 +10,5 @@ with open("plan.txt", "r") as f:
 
     for i in range(l):
         line=f.readline().strip()
-        plan2.append(line)
-pprint(plan2)
+        plan.append(line)
+pprint(plan)
